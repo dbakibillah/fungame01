@@ -7,18 +7,18 @@
     font-family: "Poppins", sans-serif;
 }
 
-html,
+/* html,
 body {
     height: 100%;
     overflow: hidden;
-}
+} */
 
-body {
+/* body {
     display: flex;
     align-items: center;
     justify-content: center;
     background: #f6f7fb;
-}
+} */
 
 ::selection {
     color: #fff;
@@ -36,11 +36,11 @@ body {
     flex-direction: column;
 }
 
-.result_images {
+/* .result_images {
     display: flex;
     column-gap: 3rem;
     justify-content: center;
-}
+} */
 
 .container.start .user_result {
     transform-origin: left;
@@ -64,9 +64,9 @@ body {
     }
 }
 
-.result_images img {
+/* .result_images img {
     width: 100px;
-}
+} */
 
 .user_result img {
     transform: rotate(90deg);
@@ -125,6 +125,7 @@ body {
     margin-top: 1rem;
     pointer-events: none;
 }
+
 
 @media (max-width: 768px) {
     .container {

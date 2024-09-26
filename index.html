@@ -14,11 +14,27 @@
     <title>Fun Games</title>
 </head>
 
-<body class="bg-[#DDEEED]">
+<body>
     <main>
-        <div class="container mx-auto text-center">
+        <div class="container mx-auto text-center space-y-10">
             <h1 class="text-5xl text-center mt-5 font-bold">Fun Games</h1>
-            <button id="btn-rock-paper-scissors" class="btn bg-[#7d2ae8] mx-auto mt-5 text-white font-bold">Rock Paper Scissors</button>
+
+            <!-- Rock Paper Scissors Button -->
+            <button id="btn-rock-paper-scissors"
+                class="p-5 m-5 w-4/6 lg:w-1/4 mx-auto rounded-xl shadow-lg bg-[#f8f8f8] flex flex-col items-center transition-all duration-300 ease-in-out transform cursor-pointer hover:scale-105 hover:shadow-lg focus:outline-none">
+                <div class="flex justify-evenly items-center gap-5 p-3 w-4/5 mx-auto">
+                    <span aria-label="Rock" role="img">
+                        <img src="./rock_paper_scissors/images/rock.png" alt="Rock" />
+                    </span>
+                    <span aria-label="Paper" role="img">
+                        <img src="./rock_paper_scissors/images/paper.png" alt="Paper" />
+                    </span>
+                    <span aria-label="Scissors" role="img">
+                        <img src="./rock_paper_scissors/images/scissors.png" alt="Scissors" />
+                    </span>
+                </div>
+                <h2 class="text-xl font-bold text-[#7d2ae8] text-center">Rock Paper Scissors</h2>
+            </button>
         </div>
     </main>
 
