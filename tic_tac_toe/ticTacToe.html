@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ticTacToe.css">
+
+    <!-- tailwind & daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/69c1ad270c.js" crossorigin="anonymous"></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <main>
+        <div
+            class="select-box absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-in-out bg-white p-[20px] pt-[20px] pb-[25px] pl-[25px] rounded-md max-w-sm w-full">
+            <header class="text-3xl font-semibold pb-[10px] border-b border-gray-300">Tic Tac Toe</header>
+            <div class="content">
+                <div class="title text-xl font-medium my-[20px]">Select which you want to be?</div>
+                <div class="options flex w-full">
+                    <button
+                        class="playerX mr-[5px] w-full text-[20px] font-medium py-[10px] bg-[#0daeff] rounded-[5px] text-white outline-none cursor-pointer transition-all duration-300 ease-in-out hover:scale-95">Player
+                        (X)</button>
+                    <button
+                        class="playerO ml-[5px] w-full text-[20px] font-medium py-[10px] bg-[#0daeff] rounded-[5px] text-white outline-none cursor-pointer transition-all duration-300 ease-in-out hover:scale-95">Player
+                        (O)</button>
+                </div>
+            </div>
+            <button id="btn-home"
+                class="btn m-8 bg-[#0daeff] text-white text-xl mx-auto w-full text-[20px] font-medium py-[10px] rounded-[5px] outline-none cursor-pointer transition-all duration-300 ease-in-out hover:scale-95">Go
+                To Home</button>
+        </div>
+
+        <!-- playboard section -->
+        <div
+            class="play-board absolute top-1/2 left-1/2 transition-all duration-300 ease-in-out opacity-0 pointer-events-none transform -translate-x-1/2 -translate-y-1/2 scale-90">
+            <div class="details p-[7px] rounded-[5px] bg-white">
+                <div class="players w-full flex relative justify-between">
+                    <span class="Xturn">X's Turn</span>
+                    <span class="Oturn">O's Turn</span>
+                    <div class="slider"></div>
+                </div>
+            </div>
+            <div class="play-area">
+                <section>
+                    <span class="box1"></span>
+                    <span class="box2"></span>
+                    <span class="box3"></span>
+                </section>
+                <section>
+                    <span class="box4"></span>
+                    <span class="box5"></span>
+                    <span class="box6"></span>
+                </section>
+                <section>
+                    <span class="box7"></span>
+                    <span class="box8"></span>
+                    <span class="box9"></span>
+                </section>
+            </div>
+        </div>
+
+        <!-- result box -->
+        <div
+            class="result-box absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-in-out">
+            <div class="won-text"></div>
+            <button class="btn bg-[#0daeff] text-white text-xl m-8 w-3/4">Replay</button>
+        </div>
+    </main>
+
+    <script src="ticTacToe.js"></script>
+</body>
+
+</html>

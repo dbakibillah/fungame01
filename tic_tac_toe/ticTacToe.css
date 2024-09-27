@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.select-box.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.play-board.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.players span {
+    position: relative;
+    z-index: 2;
+    color: #0daeff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.players.active .slider {
+    left: 50%;
+}
+
+
+.players.active span:first-child {
+    color: #fff;
+}
+
+.players.active span:last-child {
+    color: #0daeff;
+}
+
+.players span:first-child {
+    color: #fff;
+}
+
+.players .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #0daeff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.players.active .slider {
+    left: 50%;
+}
+
+.players.active span:first-child {
+    color: #0daeff;
+}
+
+.players.active span:nth-child(2) {
+    color: #fff;
+}
+
+.players.active .slider {
+    left: 50%;
+}
+
+.play-area {
+    margin-top: 20px;
+}
+
+.play-area section {
+    display: flex;
+    margin-bottom: 1px;
+}
+
+.play-area section span {
+    display: block;
+    height: 90px;
+    width: 90px;
+    margin: 2px;
+    color: #0daeff;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 5px;
+    background: #f3f3f3;
+}
+
+.result-box {
+    padding: 25px 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    background: #fff;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.result-box.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.result-box .won-text {
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.result-box .won-text p {
+    font-weight: 600;
+    margin: 0 5px;
+}
